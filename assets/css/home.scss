@@ -1,0 +1,126 @@
+h2 {
+  font-family: $font-head-two;
+  font-size: 30px;
+  text-align: center;
+  padding: .35em 0 .35em 0;
+}
+
+h1 {
+  font-family: $font-head;
+  // font-weight: 600;
+  font-size: 46px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: .5em;
+  line-height: 1.2;
+  letter-spacing: .75px;
+}
+
+h3 {
+  font-family: $font-head-two;
+  font-size: 28px;
+  text-align: center;
+  // padding: 1.25em 0 .25em 0;
+  // color: #fff;
+  color: #E1E2EF;
+  // color: #151E3F;
+  letter-spacing: .5px;
+}
+
+nav {
+  padding: 1.5em 0 1em 0;
+}
+
+.login {
+  color: #fff;
+  background-color:rgba(10,0,0,0.1);
+  border: 1px solid #fff;
+  padding: 10px;
+  width: 50px;
+  font-size: 12px;
+  font-family: $font-head-three;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: 0;
+  display: inline-block;
+  text-align: center;
+  // opacity: .5;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  right: 12em;
+}
+.login:hover {
+  background-color: rgba(1,0,0,.3);
+}
+
+.signup {
+  @extend .login;
+  right: 4em;
+}
+
+.main-tile {
+  // background: url("https://hd.unsplash.com/photo-1470299067034-07c696e9ef07");
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("https://hd.unsplash.com/photo-1470299067034-07c696e9ef07");
+  background-size: cover;
+  background-position: center;
+}
+
+
+header {
+  // border: 1px solid black;
+  margin: 0 auto;
+  width: 50%;
+  color: #fff;
+  padding: 5em 5em 8em 5em;
+}
+
+.second-tile {
+  // border-top: 1px solid white;
+  padding: 1em 0em 4.5em 0em;
+  // background-color: #151E3F;
+  background: linear-gradient(121deg, #0fb9ad 0%, #1fc7dc 51%, #2cb6e9 75%);
+  // background-color: #fff;
+  ul {
+    margin: 0 auto;
+    li {
+      color: #E1E2EF;
+      list-style-type: none;
+      font-family: $font-head-three;
+      letter-spacing: 1.5px;
+      font-weight: 300;
+      font-size: 24px;
+      display: inline-block;
+      width: 33%;
+      margin: 0;
+      text-align: center;
+      padding-top: 2em;
+    }
+    img {
+      height: 100px;
+      width: auto;
+      padding-top: 1em;
+    }
+  }
+}
+
+.third-tile {
+  padding: 6em;
+}
+
+footer {
+  background-color: #151E3F;
+  font-family: $font-head-three;
+  color: #fff;
+  padding: 2em;
+    ul {
+      li {
+        display: inline-block;
+        padding: 1em;
+      }
+    }
+}
