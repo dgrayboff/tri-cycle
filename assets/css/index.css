@@ -129,10 +129,29 @@ header {
       padding-top: 1em; }
 
 .third-tile {
+  background-color: #F7F7F7;
   padding: 6em; }
+  .third-tile .header-third {
+    margin-bottom: .5em;
+    font-size: 32px;
+    color: #000; }
+  .third-tile .signup-two {
+    font-family: "Lato", Verdana, sans-serif;
+    border: 1px solid #1fc7dc;
+    color: #000;
+    padding: 12px;
+    width: 70px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto; }
+  .third-tile .signup-two:hover {
+    background-color: #1fc7dc;
+    color: #F7F7F7; }
 
 footer {
-  background-color: #151E3F;
+  background-color: #212F4B;
   font-family: "Lato", Verdana, sans-serif;
   color: #fff;
   padding: 2em; }
