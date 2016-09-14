@@ -80,34 +80,51 @@ h3 {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
-  padding-top: 10em;
+  padding-top: 7em;
   z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
+  overflow: scroll;
   .sign-up-box-main {
-    width: 75%;
+    width: 40%;
     margin: 0 auto;
     background: #fff;
+    border-radius: 4px;
+    padding-bottom: 1em;
     .sign-up-box-left {
-      display: inline-block;
-      width: 40%;
-      padding: 1em;
-      border-right: 1px solid #000;
+      .sign-up-box-close {
+        font-family: $font-head-three;
+        font-size: 24px;
+        float: right;
+        padding-top: .5em;
+        padding-right: 1em;
+        cursor: pointer;
+      }
+      // display: block;
+      // width: 60%;
+      // padding: 1em;
+      // border-right: 1px solid #000;
       .sign-up-box-header {
         font-family: $font-head-three;
         text-align: center;
         font-size: 28px;
+        margin-bottom: 10px;
+        padding: 2em 0em .5em 0em;
       }
       .sign-up-list {
         text-align: center;
-        padding: 1.5em;
+        padding: .75em .5em 1em .5em;
         .sign-up-inputs {
           border-radius: 3px;
           border: 1px solid #dbdbdb;
-          padding: 8px 10px;
-          width: 90%;
-          margin-top: 10px;
+          padding: 10px 12px;
+          width: 60%;
+          margin-top: 15px;
+        }
+        .sign-up-inputs[type="text"] {
+          font-family: $font-head-three;
+          font-size: 14px;
         }
       }
       .sign-up-box-submit {
@@ -119,8 +136,10 @@ h3 {
         text-transform: uppercase;
         text-align: center;
         width: 75px;
-        padding: 10px 22px;
+        padding: 12px 24px;
         margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
         cursor: pointer;
       }
       .sign-up-box-submit:hover {
@@ -128,14 +147,15 @@ h3 {
       }
 
     }
-    .sign-up-box-right {
-      display: inline-block;
-      width: 40%;
-      background-image: url('');
-      background-size: cover;
-      background-position: center;
-      padding: 2em;
-    }
+    // .sign-up-box-right {
+    //   display: inline-block;
+    //   width: 40%;
+    //   // padding: 2em;
+    //   img {
+    //     height: 300px;
+    //     width: auto;
+    //   }
+    // }
   }
 }
 
