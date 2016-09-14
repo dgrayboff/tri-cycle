@@ -19,10 +19,10 @@
         <div class="sign-in-box-close" ng-click="closeLogIn()">x</div>
         <h2 class="sign-in-box-header">Sign in</h2>
         <ul class="sign-in-list">
-          <li><input type="text" placeholder="Email" class="sign-in-inputs"></li>
-          <li><input type="text" placeholder="Password" class="sign-in-inputs"></li>
+          <li><input type="email" placeholder="Email" class="sign-in-inputs" ng-model="loginUsername"></li>
+          <li><input type="password" placeholder="Password" class="sign-in-inputs" ng-model="loginPassword"></li>
         </ul>
-        <div class="sign-in-box-submit">Sign in</div>
+        <div class="sign-in-box-submit" ng-click="logInSubmit()">Sign in</div>
       </div>
   </div>
   </section>
