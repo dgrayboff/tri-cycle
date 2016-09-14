@@ -59,7 +59,8 @@ h1 {
   text-align: center;
   padding-bottom: .5em;
   line-height: 1.2;
-  letter-spacing: .75px; }
+  letter-spacing: .75px;
+  color: #E1E2Ef; }
 
 h3 {
   font-family: "Satisfy", Helvetica, sans-serif;
@@ -129,16 +130,16 @@ header {
       padding-top: 1em; }
 
 .third-tile {
-  background-color: #F7F7F7;
+  background-color: #212F4B;
   padding: 6em; }
   .third-tile .header-third {
-    margin-bottom: .5em;
+    margin-bottom: .75em;
     font-size: 32px;
-    color: #000; }
+    color: #E1E2EF; }
   .third-tile .signup-two {
     font-family: "Lato", Verdana, sans-serif;
     border: 1px solid #1fc7dc;
-    color: #000;
+    color: #F7F7F7;
     padding: 12px;
     width: 70px;
     font-size: 18px;
@@ -151,10 +152,12 @@ header {
     color: #F7F7F7; }
 
 footer {
-  background-color: #212F4B;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://hd.unsplash.com/photo-1472035846169-06348f2377fa");
+  background-size: cover;
+  background-position: center;
   font-family: "Lato", Verdana, sans-serif;
-  color: #fff;
-  padding: 2em; }
+  color: #F7F7F7;
+  padding: 1.5em; }
   footer ul li {
     display: inline-block;
     padding: 1em; }
