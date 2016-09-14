@@ -60,52 +60,100 @@ h1 {
   padding-bottom: .5em;
   line-height: 1.2;
   letter-spacing: .75px;
-  color: #E1E2Ef; }
+  color: #fff; }
 
 h3 {
   font-family: "Satisfy", Helvetica, sans-serif;
   font-size: 28px;
   text-align: center;
-  color: #E1E2EF;
-  letter-spacing: .5px; }
-
-nav {
-  padding: 1.5em 0 1em 0; }
-
-.login, .signup {
   color: #fff;
-  background-color: rgba(10, 0, 0, 0.1);
-  border: 1px solid #fff;
-  padding: 10px;
-  width: 50px;
-  font-size: 12px;
-  font-family: "Lato", Verdana, sans-serif;
-  text-transform: uppercase;
-  margin-left: auto;
-  margin-right: 0;
-  display: inline-block;
-  text-align: center;
-  border-radius: 3px;
-  cursor: pointer;
-  position: absolute;
-  right: 12em; }
-
-.login:hover, .signup:hover {
-  background-color: rgba(1, 0, 0, 0.3); }
-
-.signup {
-  right: 4em; }
+  letter-spacing: .5px; }
 
 .main-tile {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://hd.unsplash.com/photo-1470299067034-07c696e9ef07");
   background-size: cover;
   background-position: center; }
+  .main-tile header {
+    margin: 0 auto;
+    width: 50%;
+    color: #fff;
+    padding: 5em 5em 8em 5em; }
+  .main-tile nav {
+    padding: 1.5em 0 1em 0; }
+    .main-tile nav .login, .main-tile nav .signup {
+      color: #fff;
+      background-color: rgba(10, 0, 0, 0.1);
+      border: 1px solid #fff;
+      padding: 10px;
+      width: 50px;
+      font-size: 12px;
+      font-family: "Lato", Verdana, sans-serif;
+      text-transform: uppercase;
+      margin-left: auto;
+      margin-right: 0;
+      display: inline-block;
+      text-align: center;
+      border-radius: 3px;
+      cursor: pointer;
+      position: absolute;
+      right: 12em; }
+    .main-tile nav .login:hover, .main-tile nav .signup:hover {
+      background-color: rgba(1, 0, 0, 0.3); }
+    .main-tile nav .signup {
+      right: 4em; }
 
-header {
-  margin: 0 auto;
-  width: 50%;
-  color: #fff;
-  padding: 5em 5em 8em 5em; }
+.sign-up-section {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding-top: 10em;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .sign-up-section .sign-up-box-main {
+    width: 75%;
+    margin: 0 auto;
+    background: #fff; }
+    .sign-up-section .sign-up-box-main .sign-up-box-left {
+      display: inline-block;
+      width: 40%;
+      padding: 1em;
+      border-right: 1px solid #000; }
+      .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-box-header {
+        font-family: "Lato", Verdana, sans-serif;
+        text-align: center;
+        font-size: 28px; }
+      .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-list {
+        text-align: center;
+        padding: 1.5em; }
+        .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-list .sign-up-inputs {
+          border-radius: 3px;
+          border: 1px solid #dbdbdb;
+          padding: 8px 10px;
+          width: 90%;
+          margin-top: 10px; }
+      .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-box-submit {
+        background: #2cb6e9;
+        color: #fff;
+        border-radius: 3px;
+        font-family: "Lato", Verdana, sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 75px;
+        padding: 10px 22px;
+        margin: 0 auto;
+        cursor: pointer; }
+      .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-box-submit:hover {
+        background-color: #56c4ed; }
+    .sign-up-section .sign-up-box-main .sign-up-box-right {
+      display: inline-block;
+      width: 40%;
+      background-image: url("");
+      background-size: cover;
+      background-position: center;
+      padding: 2em; }
 
 .second-tile {
   padding: 1em 0em 4.5em 0em;
@@ -113,7 +161,7 @@ header {
   .second-tile ul {
     margin: 0 auto; }
     .second-tile ul li {
-      color: #E1E2EF;
+      color: #fff;
       list-style-type: none;
       font-family: "Lato", Verdana, sans-serif;
       letter-spacing: 1.5px;
@@ -135,7 +183,7 @@ header {
   .third-tile .header-third {
     margin-bottom: .75em;
     font-size: 32px;
-    color: #E1E2EF; }
+    color: #fff; }
   .third-tile .signup-two {
     font-family: "Lato", Verdana, sans-serif;
     border: 1px solid #1fc7dc;
