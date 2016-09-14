@@ -127,6 +127,14 @@ h3 {
           font-family: $font-head-three;
           font-size: 14px;
         }
+        .sign-up-inputs[type="email"] {
+          font-family: $font-head-three;
+          font-size: 14px;
+        }
+        .sign-up-inputs[type="password"] {
+          font-family: $font-head-three;
+          font-size: 14px;
+        }
       }
       .sign-up-box-submit {
         background: #2cb6e9;
@@ -210,7 +218,11 @@ h3 {
           width: 60%;
           margin-top: 15px;
         }
-        .sign-in-inputs[type="text"] {
+        .sign-in-inputs[type="email"] {
+          font-family: $font-head-three;
+          font-size: 14px;
+        }
+        .sign-in-inputs[type="password"] {
           font-family: $font-head-three;
           font-size: 14px;
         }

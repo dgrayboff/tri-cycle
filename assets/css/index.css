@@ -144,6 +144,12 @@ h3 {
       .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-list .sign-up-inputs[type="text"] {
         font-family: "Lato", Verdana, sans-serif;
         font-size: 14px; }
+      .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-list .sign-up-inputs[type="email"] {
+        font-family: "Lato", Verdana, sans-serif;
+        font-size: 14px; }
+      .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-list .sign-up-inputs[type="password"] {
+        font-family: "Lato", Verdana, sans-serif;
+        font-size: 14px; }
     .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-box-submit {
       background: #2cb6e9;
       color: #fff;
@@ -201,7 +207,10 @@ h3 {
         padding: 10px 12px;
         width: 60%;
         margin-top: 15px; }
-      .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-list .sign-in-inputs[type="text"] {
+      .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-list .sign-in-inputs[type="email"] {
+        font-family: "Lato", Verdana, sans-serif;
+        font-size: 14px; }
+      .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-list .sign-in-inputs[type="password"] {
         font-family: "Lato", Verdana, sans-serif;
         font-size: 14px; }
     .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-box-submit {

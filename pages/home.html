@@ -33,13 +33,13 @@
         <div class="sign-up-box-close" ng-click="closeSignUp()">x</div>
         <h2 class="sign-up-box-header">Register</h2>
         <ul class="sign-up-list">
-          <li><input type="text" placeholder="Username" class="sign-up-inputs"></li>
-          <li><input type="text" placeholder="Email" class="sign-up-inputs"></li>
-          <li><input type="text" placeholder="Re-enter email" class="sign-up-inputs"></li>
-          <li><input type="text" placeholder="Set a password" class="sign-up-inputs"></li>
-          <li><input type="text" placeholder="Re-enter password" class="sign-up-inputs"></li>
+          <li><input type="text" placeholder="Username" class="sign-up-inputs" ng-model="registerUsername"></li>
+          <li><input type="email" placeholder="Email" class="sign-up-inputs" ng-model="registerEmail"></li>
+          <li><input type="email" placeholder="Re-enter email" class="sign-up-inputs" ng-model="registerEmailConfirm"></li>
+          <li><input type="password" placeholder="Set password" class="sign-up-inputs" ng-model="registerPassword"></li>
+          <li><input type="password" placeholder="Re-enter password" class="sign-up-inputs" ng-model="registerPasswordConfirm"></li>
         </ul>
-        <div class="sign-up-box-submit">Register</div>
+        <div class="sign-up-box-submit" ng-click="signUpSubmit()">Register</div>
       </div>
       <!-- <div class="sign-up-box-right">
         <!-- <img src="https://image.freepik.com/free-vector/two-coloured-bike-design_1133-9.jpg"/> -->
