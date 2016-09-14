@@ -85,7 +85,7 @@ h3 {
       background-color: rgba(10, 0, 0, 0.1);
       border: 1px solid #fff;
       padding: 10px;
-      width: 50px;
+      width: 55px;
       font-size: 12px;
       font-family: "Lato", Verdana, sans-serif;
       text-transform: uppercase;
@@ -130,7 +130,8 @@ h3 {
       text-align: center;
       font-size: 28px;
       margin-bottom: 10px;
-      padding: 2em 0em .5em 0em; }
+      padding: 2em 0em .5em 0em;
+      text-transform: uppercase; }
     .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-list {
       text-align: center;
       padding: .75em .5em 1em .5em; }
@@ -156,9 +157,70 @@ h3 {
       margin: 0 auto;
       margin-top: 25px;
       margin-bottom: 25px;
-      cursor: pointer; }
+      cursor: pointer;
+      text-transform: uppercase; }
     .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-box-submit:hover {
       background-color: #56c4ed; }
+
+.sign-in-section {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding-top: 7em;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll; }
+  .sign-in-section .sign-in-box-main {
+    width: 40%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    padding-bottom: 1em; }
+    .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-box-close {
+      font-family: "Lato", Verdana, sans-serif;
+      font-size: 24px;
+      float: right;
+      padding-top: .5em;
+      padding-right: 1em;
+      cursor: pointer; }
+    .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-box-header {
+      font-family: "Lato", Verdana, sans-serif;
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+      padding: 2em 0em .5em 0em;
+      text-transform: uppercase; }
+    .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-list {
+      text-align: center;
+      padding: .75em .5em 1em .5em; }
+      .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-list .sign-in-inputs {
+        border-radius: 3px;
+        border: 1px solid #dbdbdb;
+        padding: 10px 12px;
+        width: 60%;
+        margin-top: 15px; }
+      .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-list .sign-in-inputs[type="text"] {
+        font-family: "Lato", Verdana, sans-serif;
+        font-size: 14px; }
+    .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-box-submit {
+      background: #0fb9ad;
+      color: #fff;
+      border-radius: 3px;
+      font-family: "Lato", Verdana, sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      width: 75px;
+      padding: 12px 24px;
+      margin: 0 auto;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      cursor: pointer;
+      text-transform: uppercase; }
+    .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-box-submit:hover {
+      background-color: #57cec5; }
 
 .second-tile {
   padding: 1em 0em 4.5em 0em;

@@ -51,7 +51,7 @@ h3 {
       background-color:rgba(10,0,0,0.1);
       border: 1px solid #fff;
       padding: 10px;
-      width: 50px;
+      width: 55px;
       font-size: 12px;
       font-family: $font-head-three;
       text-transform: uppercase;
@@ -111,6 +111,7 @@ h3 {
         font-size: 28px;
         margin-bottom: 10px;
         padding: 2em 0em .5em 0em;
+        text-transform: uppercase;
       }
       .sign-up-list {
         text-align: center;
@@ -141,6 +142,7 @@ h3 {
         margin-top: 25px;
         margin-bottom: 25px;
         cursor: pointer;
+        text-transform: uppercase;
       }
       .sign-up-box-submit:hover {
         background-color: #56c4ed;
@@ -156,6 +158,84 @@ h3 {
     //     width: auto;
     //   }
     // }
+  }
+}
+
+.sign-in-section {
+  // @extend .sign-up-section;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding-top: 7em;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  .sign-in-box-main {
+    // @extend .sign-up-box-main;
+    width: 40%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    padding-bottom: 1em;
+    .sign-in-box-left {
+      .sign-in-box-close {
+        // @extend .sign-up-box-close;
+        font-family: $font-head-three;
+        font-size: 24px;
+        float: right;
+        padding-top: .5em;
+        padding-right: 1em;
+        cursor: pointer;
+      }
+      .sign-in-box-header {
+        // @extend .sign-up-box-header;
+        font-family: $font-head-three;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 10px;
+        padding: 2em 0em .5em 0em;
+        text-transform: uppercase;
+      }
+      .sign-in-list {
+        // @extend .sign-up-list;
+        text-align: center;
+        padding: .75em .5em 1em .5em;
+        .sign-in-inputs {
+          // @extend .sign-up-inputs;
+          border-radius: 3px;
+          border: 1px solid #dbdbdb;
+          padding: 10px 12px;
+          width: 60%;
+          margin-top: 15px;
+        }
+        .sign-in-inputs[type="text"] {
+          font-family: $font-head-three;
+          font-size: 14px;
+        }
+      }
+      .sign-in-box-submit {
+        // @extend .sign-up-box-submit;
+        background: #0fb9ad;
+        color: #fff;
+        border-radius: 3px;
+        font-family: $font-head-three;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 75px;
+        padding: 12px 24px;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      .sign-in-box-submit:hover {
+        background-color: #57cec5;
+      }
+    }
   }
 }
 
