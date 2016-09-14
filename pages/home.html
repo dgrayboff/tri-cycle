@@ -2,16 +2,50 @@
 
   <div class="main-tile">
     <nav>
-      <div class="login">Log in</div>
-      <div class="signup">Sign up</div>
+      <div class="login" ng-click="logIn()">Sign in</div>
+      <div class="signup" ng-click="signUp()">Register</div>
     </nav>
 
     <header>
       <h2>Welcome to</h2>
       <h1>Tri-Cycle</h1>
-      <h3>A local community geared for NC bicyclists.</h3>
+      <h3>A local community geared for NC bicyclists</h3>
     </header>
   </div>
+
+  <section class="sign-in-section" ng-hide="logInModal">
+    <div class="sign-in-box-main">
+      <div class="sign-in-box-left">
+        <div class="sign-in-box-close" ng-click="closeLogIn()">x</div>
+        <h2 class="sign-in-box-header">Sign in</h2>
+        <ul class="sign-in-list">
+          <li><input type="email" placeholder="Email" class="sign-in-inputs" ng-model="loginUsername"></li>
+          <li><input type="password" placeholder="Password" class="sign-in-inputs" ng-model="loginPassword"></li>
+        </ul>
+        <div class="sign-in-box-submit" ng-click="logInSubmit()">Sign in</div>
+      </div>
+  </div>
+  </section>
+
+  <section class="sign-up-section" ng-hide="signUpModal">
+    <div class="sign-up-box-main">
+      <div class="sign-up-box-left">
+        <div class="sign-up-box-close" ng-click="closeSignUp()">x</div>
+        <h2 class="sign-up-box-header">Register</h2>
+        <ul class="sign-up-list">
+          <li><input type="text" placeholder="Username" class="sign-up-inputs" ng-model="registerUsername"></li>
+          <li><input type="email" placeholder="Email" class="sign-up-inputs" ng-model="registerEmail"></li>
+          <li><input type="email" placeholder="Re-enter email" class="sign-up-inputs" ng-model="registerEmailConfirm"></li>
+          <li><input type="password" placeholder="Set password" class="sign-up-inputs" ng-model="registerPassword"></li>
+          <li><input type="password" placeholder="Re-enter password" class="sign-up-inputs" ng-model="registerPasswordConfirm"></li>
+        </ul>
+        <div class="sign-up-box-submit" ng-click="signUpSubmit()">Register</div>
+      </div>
+      <!-- <div class="sign-up-box-right">
+        <!-- <img src="https://image.freepik.com/free-vector/two-coloured-bike-design_1133-9.jpg"/> -->
+      <!-- </div> -->
+  </div>
+  </section>
 
   <div class="second-tile">
     <ul>
@@ -22,6 +56,10 @@
   </div>
 
   <div class="third-tile">
+    <div>
+      <h2 class="header-third">Be part of the community</h2>
+      <div class="signup-two" ng-click="signUp()">Join now</div>
+    </div>
   </div>
 
   <footer>
@@ -30,4 +68,5 @@
       <li>Contact</li>
     </ul>
   </footer>
+
 </div>

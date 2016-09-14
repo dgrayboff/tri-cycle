@@ -14,6 +14,8 @@ h1 {
   padding-bottom: .5em;
   line-height: 1.2;
   letter-spacing: .75px;
+  // color: #0fb9ad;
+  color: #fff;
 }
 
 h3 {
@@ -21,42 +23,9 @@ h3 {
   font-size: 28px;
   text-align: center;
   // padding: 1.25em 0 .25em 0;
-  // color: #fff;
-  color: #E1E2EF;
+  color: #fff;
   // color: #151E3F;
   letter-spacing: .5px;
-}
-
-nav {
-  padding: 1.5em 0 1em 0;
-}
-
-.login {
-  color: #fff;
-  background-color:rgba(10,0,0,0.1);
-  border: 1px solid #fff;
-  padding: 10px;
-  width: 50px;
-  font-size: 12px;
-  font-family: $font-head-three;
-  text-transform: uppercase;
-  margin-left: auto;
-  margin-right: 0;
-  display: inline-block;
-  text-align: center;
-  // opacity: .5;
-  border-radius: 3px;
-  cursor: pointer;
-  position: absolute;
-  right: 12em;
-}
-.login:hover {
-  background-color: rgba(1,0,0,.3);
-}
-
-.signup {
-  @extend .login;
-  right: 4em;
 }
 
 .main-tile {
@@ -68,16 +37,221 @@ nav {
     url("https://hd.unsplash.com/photo-1470299067034-07c696e9ef07");
   background-size: cover;
   background-position: center;
+  header {
+    // border: 1px solid black;
+    margin: 0 auto;
+    width: 50%;
+    color: #fff;
+    padding: 5em 5em 8em 5em;
+  }
+  nav {
+    padding: 1.5em 0 1em 0;
+    .login {
+      color: #fff;
+      background-color:rgba(10,0,0,0.1);
+      border: 1px solid #fff;
+      padding: 10px;
+      width: 55px;
+      font-size: 12px;
+      font-family: $font-head-three;
+      text-transform: uppercase;
+      margin-left: auto;
+      margin-right: 0;
+      display: inline-block;
+      text-align: center;
+      // opacity: .5;
+      border-radius: 3px;
+      cursor: pointer;
+      position: absolute;
+      right: 12em;
+    }
+    .login:hover {
+      background-color: rgba(1,0,0,.3);
+    }
+
+    .signup {
+      @extend .login;
+      right: 4em;
+    }
+  }
+}
+
+.sign-up-section {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding-top: 7em;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  .sign-up-box-main {
+    width: 40%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    padding-bottom: 1em;
+    .sign-up-box-left {
+      .sign-up-box-close {
+        font-family: $font-head-three;
+        font-size: 24px;
+        float: right;
+        padding-top: .5em;
+        padding-right: 1em;
+        cursor: pointer;
+      }
+      // display: block;
+      // width: 60%;
+      // padding: 1em;
+      // border-right: 1px solid #000;
+      .sign-up-box-header {
+        font-family: $font-head-three;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 10px;
+        padding: 2em 0em .5em 0em;
+        text-transform: uppercase;
+      }
+      .sign-up-list {
+        text-align: center;
+        padding: .75em .5em 1em .5em;
+        .sign-up-inputs {
+          border-radius: 3px;
+          border: 1px solid #dbdbdb;
+          padding: 10px 12px;
+          width: 60%;
+          margin-top: 15px;
+        }
+        .sign-up-inputs[type="text"] {
+          font-family: $font-head-three;
+          font-size: 14px;
+        }
+        .sign-up-inputs[type="email"] {
+          font-family: $font-head-three;
+          font-size: 14px;
+        }
+        .sign-up-inputs[type="password"] {
+          font-family: $font-head-three;
+          font-size: 14px;
+        }
+      }
+      .sign-up-box-submit {
+        background: #2cb6e9;
+        color: #fff;
+        border-radius: 3px;
+        font-family: $font-head-three;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 75px;
+        padding: 12px 24px;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      .sign-up-box-submit:hover {
+        background-color: #56c4ed;
+      }
+
+    }
+    // .sign-up-box-right {
+    //   display: inline-block;
+    //   width: 40%;
+    //   // padding: 2em;
+    //   img {
+    //     height: 300px;
+    //     width: auto;
+    //   }
+    // }
+  }
+}
+
+.sign-in-section {
+  // @extend .sign-up-section;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding-top: 7em;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  .sign-in-box-main {
+    // @extend .sign-up-box-main;
+    width: 40%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 4px;
+    padding-bottom: 1em;
+    .sign-in-box-left {
+      .sign-in-box-close {
+        // @extend .sign-up-box-close;
+        font-family: $font-head-three;
+        font-size: 24px;
+        float: right;
+        padding-top: .5em;
+        padding-right: 1em;
+        cursor: pointer;
+      }
+      .sign-in-box-header {
+        // @extend .sign-up-box-header;
+        font-family: $font-head-three;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 10px;
+        padding: 2em 0em .5em 0em;
+        text-transform: uppercase;
+      }
+      .sign-in-list {
+        // @extend .sign-up-list;
+        text-align: center;
+        padding: .75em .5em 1em .5em;
+        .sign-in-inputs {
+          // @extend .sign-up-inputs;
+          border-radius: 3px;
+          border: 1px solid #dbdbdb;
+          padding: 10px 12px;
+          width: 60%;
+          margin-top: 15px;
+        }
+        .sign-in-inputs[type="email"] {
+          font-family: $font-head-three;
+          font-size: 14px;
+        }
+        .sign-in-inputs[type="password"] {
+          font-family: $font-head-three;
+          font-size: 14px;
+        }
+      }
+      .sign-in-box-submit {
+        // @extend .sign-up-box-submit;
+        background: #0fb9ad;
+        color: #fff;
+        border-radius: 3px;
+        font-family: $font-head-three;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 75px;
+        padding: 12px 24px;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      .sign-in-box-submit:hover {
+        background-color: #57cec5;
+      }
+    }
+  }
 }
 
 
-header {
-  // border: 1px solid black;
-  margin: 0 auto;
-  width: 50%;
-  color: #fff;
-  padding: 5em 5em 8em 5em;
-}
 
 .second-tile {
   // border-top: 1px solid white;
@@ -88,7 +262,7 @@ header {
   ul {
     margin: 0 auto;
     li {
-      color: #E1E2EF;
+      color: #fff;
       list-style-type: none;
       font-family: $font-head-three;
       letter-spacing: 1.5px;
@@ -109,14 +283,46 @@ header {
 }
 
 .third-tile {
+  // background-color: #F7F7F7;
+  background-color: #212F4B;
   padding: 6em;
+  .header-third {
+    margin-bottom: .75em;
+    font-size: 32px;
+    color: #fff;
+  }
+  .signup-two {
+    font-family: $font-head-three;
+    border: 1px solid #1fc7dc;
+    // color: #000;
+    color: #F7F7F7;
+    padding: 12px;
+    width: 70px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .signup-two:hover {
+    background-color: #1fc7dc;
+    color: #F7F7F7;
+  }
 }
 
 footer {
-  background-color: #151E3F;
+  // background-color: #212F4B;
+  // background-image: url('https://hd.unsplash.com/photo-1472035846169-06348f2377fa');
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://hd.unsplash.com/photo-1472035846169-06348f2377fa");
+  background-size: cover;
+  background-position: center;
   font-family: $font-head-three;
-  color: #fff;
-  padding: 2em;
+  color: #F7F7F7;
+  padding: 1.5em;
     ul {
       li {
         display: inline-block;
