@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(animate-copy.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,6 +48,8 @@ table {
   border-spacing: 0; }
 
 h2 {
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
   font-family: "Satisfy", Helvetica, sans-serif;
   font-size: 30px;
   text-align: center;
@@ -63,6 +66,8 @@ h1 {
   color: #fff; }
 
 h3 {
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
   font-family: "Satisfy", Helvetica, sans-serif;
   font-size: 28px;
   text-align: center;
@@ -110,14 +115,15 @@ h3 {
   z-index: 100;
   position: fixed;
   top: 0;
-  left: 0;
-  overflow: scroll; }
+  left: 0; }
   .sign-up-section .sign-up-box-main {
     width: 40%;
     margin: 0 auto;
     background: #fff;
     border-radius: 4px;
     padding-bottom: 1em; }
+    .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-form {
+      text-align: center; }
     .sign-up-section .sign-up-box-main .sign-up-box-left .sign-up-box-close {
       font-family: "Lato", Verdana, sans-serif;
       font-size: 24px;
@@ -154,11 +160,11 @@ h3 {
       background: #2cb6e9;
       color: #fff;
       border-radius: 3px;
+      border: 1px solid #2cb6e9;
       font-family: "Lato", Verdana, sans-serif;
       font-size: 14px;
       text-transform: uppercase;
       text-align: center;
-      width: 75px;
       padding: 12px 24px;
       margin: 0 auto;
       margin-top: 25px;
@@ -176,14 +182,15 @@ h3 {
   z-index: 100;
   position: fixed;
   top: 0;
-  left: 0;
-  overflow: scroll; }
+  left: 0; }
   .sign-in-section .sign-in-box-main {
     width: 40%;
     margin: 0 auto;
     background: #fff;
     border-radius: 4px;
     padding-bottom: 1em; }
+    .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-form {
+      text-align: center; }
     .sign-in-section .sign-in-box-main .sign-in-box-left .sign-in-box-close {
       font-family: "Lato", Verdana, sans-serif;
       font-size: 24px;
@@ -217,11 +224,11 @@ h3 {
       background: #0fb9ad;
       color: #fff;
       border-radius: 3px;
+      border: 1px solid #0fb9ad;
       font-family: "Lato", Verdana, sans-serif;
       font-size: 14px;
       text-transform: uppercase;
       text-align: center;
-      width: 75px;
       padding: 12px 24px;
       margin: 0 auto;
       margin-top: 25px;
