@@ -85,7 +85,7 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
-  overflow: scroll;
+  // overflow: scroll;
   .sign-up-box-main {
     width: 40%;
     margin: 0 auto;
@@ -93,6 +93,9 @@ h3 {
     border-radius: 4px;
     padding-bottom: 1em;
     .sign-up-box-left {
+      .sign-up-form {
+        text-align: center;
+      }
       .sign-up-box-close {
         font-family: $font-head-three;
         font-size: 24px;
@@ -140,11 +143,12 @@ h3 {
         background: #2cb6e9;
         color: #fff;
         border-radius: 3px;
+        border: 1px solid #2cb6e9;
         font-family: $font-head-three;
         font-size: 14px;
         text-transform: uppercase;
         text-align: center;
-        width: 75px;
+        // width: 75px;
         padding: 12px 24px;
         margin: 0 auto;
         margin-top: 25px;
@@ -179,7 +183,7 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
-  overflow: scroll;
+  // overflow: scroll;
   .sign-in-box-main {
     // @extend .sign-up-box-main;
     width: 40%;
@@ -188,6 +192,9 @@ h3 {
     border-radius: 4px;
     padding-bottom: 1em;
     .sign-in-box-left {
+      .sign-in-form {
+        text-align: center;
+      }
       .sign-in-box-close {
         // @extend .sign-up-box-close;
         font-family: $font-head-three;
@@ -232,11 +239,12 @@ h3 {
         background: #0fb9ad;
         color: #fff;
         border-radius: 3px;
+        border: 1px solid #0fb9ad;
         font-family: $font-head-three;
         font-size: 14px;
         text-transform: uppercase;
         text-align: center;
-        width: 75px;
+        // width: 75px;
         padding: 12px 24px;
         margin: 0 auto;
         margin-top: 25px;
