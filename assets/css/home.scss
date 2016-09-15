@@ -1,4 +1,6 @@
 h2 {
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
   font-family: $font-head-two;
   font-size: 30px;
   text-align: center;
@@ -19,6 +21,8 @@ h1 {
 }
 
 h3 {
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
   font-family: $font-head-two;
   font-size: 28px;
   text-align: center;

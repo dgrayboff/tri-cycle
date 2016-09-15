@@ -2,6 +2,15 @@ cycleApp.controller('homeCtrl', function($scope){
 
   console.log("homeCtrl linked");
 
+  // angular.element(document).ready(function () {
+    var h1Load = angular.element( document.querySelector( 'h1' ) );
+    h1Load.addClass('animated fadeInLeft');
+    var h2Load = angular.element( document.querySelector( '.welcome' ) );
+    h2Load.addClass('animated fadeIn');
+    var h3Load = angular.element( document.querySelector( '.header-about' ) );
+    h3Load.addClass('animated fadeIn');
+    // });
+
   // SIGN UP/REGISTER //
   $scope.signUpModal = true;
   $scope.signUp = function(){

@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(animate-copy.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,6 +48,8 @@ table {
   border-spacing: 0; }
 
 h2 {
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
   font-family: "Satisfy", Helvetica, sans-serif;
   font-size: 30px;
   text-align: center;
@@ -63,6 +66,8 @@ h1 {
   color: #fff; }
 
 h3 {
+  animation-delay: .5s;
+  -webkit-animation-delay: .5s;
   font-family: "Satisfy", Helvetica, sans-serif;
   font-size: 28px;
   text-align: center;
